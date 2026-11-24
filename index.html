@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gaaddisa Driving School - Educational Driving Skills Courses in English, Afaan Oromoo, and Amharic.">
+  <title>Gaaddisa Driving School</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cloudflare.com">
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        
+      <style>
+    @media (max-width: 640px) {
+      header h1 { font-size: 1.4rem; }
+      .gaddis-banner h2 { font-size: 1.9rem; }
+      .booking-section { padding: 1.5rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header>
+    <div class="header-inner">
+      <h1 data-i18n="siteTitle">Gaaddisa Driving School</h1>
+      <div class="header-right">
+        <div class="lang-switcher">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          <select id="languageSelect" aria-label="Select Language">
+            <option value="en">English</option>
+            <option value="om">Afaan Oromoo</option>
+            <option value="am">አማርኛ</option>
+          </select>
+        </div>
+        <div class="social-icon">
+          <p data-i18n="directContact">Directly contact:</p>
+          <a href="https://wa.me" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://t.me" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i> Telegram</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="/imag/GA+LOGO+TRANSPARENT-WIDE-02.webp" alt="Gaaddisa Driving Logo">
+    </div>
+    <nav aria-label="Primary Navigation">
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a href="#about" data-i18n="navAbout">About Us</a>
+      <a href="#courses" data-i18n="navCourses">Courses</a>
+      <a href="#booking" data-i18n="navBookings">Registration</a>
+      <a href="#contact" data-i18n="navContact">Contact Us</a>
+    </nav>
+    <a href="tel:+251976799331" class="call-btn">
+      Call To: <i class="fa-solid fa-phone"></i> 0976799331
+    </a>
+  </div>
+
+  <main>
+    <!-- Hero Banner -->
+    <section id="home" class="gaddis-banner">
+      <h2 data-i18n="heroTitle">Welcome to <span>Gaaddisa Driving</span> School Center</h2>
+      <p data-i18n="heroSubtitle"><span>Gaaddisa</span> Educational Driving Skills Courses for Teenagers, Young Adults, and Beginners.</p>
+      <a href="#booking" class="btn-primary" data-i18n="heroBtn">Register Now</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+      <h2 class="section-title" data-i18n="aboutTitle">About Us</h2>
+      <div class="about-grid">
+        <div>
+          <h3 data-i18n="aboutHeading">Why Choose Gaaddisa Driving School?</h3>
+          <p data-i18n="aboutDesc">Welcome to Gaaddisa Driving School, a premier driving education institution dedicated to producing responsible, skilled, and defensive drivers.</p>
+          <div class="vmv-grid">
+            <div class="vmv-card">
+              <h4><i class="fa-solid fa-eye"></i> <span data-i18n="visionTitle">Our Vision</span></h4>
+              <p data-i18n="visionDesc">To be the most trusted and leading driving school in Ethiopia, fostering zero-accident roads through high-quality training.</p>
+            </div>
+            <div class="vmv-card">
+              <h4><i class="fa-solid fa-bullseye"></i> <span data-i18n="missionTitle">Our Mission</span></h4>
+              <p data-i18n="missionDesc">To provide exceptional and practical driving instruction, combining interactive theory with hands-on road training.</p>
+            </div>
+            <div class="vmv-card">
+              <h4><i class="fa-solid fa-gem"></i> <span data-i18n="valuesTitle">Core Values</span></h4>
+              <p data-i18n="valuesDesc">Integrity, Professional Excellence, Road Safety First, Patience, and Inclusivity.</p>
+            </div>
+          </div>
+          <div class="about-features">
+            <div class="feature-box"><i class="fa-solid fa-check-circle"></i> <span data-i18n="feat1">Certified Instructors</span></div>
+            <div class="feature-box"><i class="fa-solid fa-car"></i> <span data-i18n="feat2">Modern Training Cars</span></div>
+            <div class="feature-box"><i class="fa-solid fa-clock"></i> <span data-i18n="feat3">Flexible Schedules</span></div>
+            <div class="feature-box"><i class="fa-solid fa-shield-halved"></i> <span data-i18n="feat4">Safety First Approach</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="container">
+      <h2 class="section-title" data-i18n="coursesTitle">Our Courses</h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <div>
+            <h3><i class="fa-solid fa-award"></i> <span data-i18n="course1Title">Duke of Edinburgh</span></h3>
+            <p data-i18n="course1Desc">Our Driving Skills Courses are perfect for any young person interested in learning to gain an early education for their skills requirement of The Duke of Edinburgh's Award.</p>
+          </div>
+          <a href="#booking" class="btn-outline" data-i18n="enrollBtn">Enroll in Course</a>
+        </div>
+        <div class="course-card">
+          <div>
+            <h3><i class="fa-solid fa-laptop"></i> <span data-i18n="course2Title">Roadwise Online Course</span></h3>
+            <p data-i18n="course2Desc">A comprehensive vocational programme that recognises and rewards student personal achievements in road safety, traffic rules, and defensive driving theory.</p>
+          </div>
+          <a href="#booking" class="btn-outline" data-i18n="enrollBtn">Enroll in Course</a>
+        </div>
+        <div class="course-card">
+          <div>
+            <h3><i class="fa-solid fa-id-card"></i> <span data-i18n="course3Title">Standard Driving License</span></h3>
+            <p data-i18n="course3Desc">Full practical and theoretical training (Manual &amp; Automatic) designed to prepare you completely for your official driving test and everyday road confidence.</p>
+          </div>
+          <a href="#booking" class="btn-outline" data-i18n="enrollBtn">Enroll in Course</a>
+        </div>
+      </div>
+    </section>
+
+  <section class="form-section">
+            <h2>Trainee Registration Form / የሰልጣኝ ምዝገባ ፎርም</h2>
+            <form id="registrationForm" onsubmit="handleRegistration(event)">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullNameEn">Full Name (English) *</label>
+                        <input type="text" id="fullNameEn" placeholder="First Middle Last" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fullNameAm">ሙሉ ስም (በአማርኛ) *</label>
+                        <input type="text" id="fullNameAm" placeholder="ስም የአባት የአያት" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="motherName">Mother's Full Name / የናት ሙሉ ስም *</label>
+                        <input type="text" id="motherName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Sex (Gender) *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="sex" value="Male" required> Male
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="sex" value="Female"> Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend>Birth Date (Ethiopian Calendar) / የልደት ቀን (በኢትዮጵያ ዘመን አቆጣጠር) *</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ecDay">Day / ቀን</label>
+                            <select id="ecDay" required></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ecMonth">Month / ወር</label>
+                            <select id="ecMonth" required>
+                                <option value="1">Meskerem / መስከረም</option>
+                                <option value="2">Tekemt / ጥቅምት</option>
+                                <option value="3">Hedar / ህዳር</option>
+                                <option value="4">Tahsas / ታህሳስ</option>
+                                <option value="5">Tir / ጥር</option>
+                                <option value="6">Yakatit / የካቲት</option>
+                                <option value="7">Megabit / መጋቢት</option>
+                                <option value="8">Miazia / ሚያዚያ</option>
+                                <option value="9">Genbot / ግንቦት</option>
+                                <option value="10">Sene / ሰኔ</option>
+                                <option value="11">Hamle / ሐምሌ</option>
+                                <option value="12">Nehase / ነሐሴ</option>
+                                <option value="13">Pagume / ጳጉሜ</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ecYear">Year / ዓመተ ምሕረት</label>
+                            <select id="ecYear" onchange="validateAgeRequirements()" required></select>
+                        </div>
+                    </div>
+                    <div id="ageError" class="error-message"></div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="educationLevel">Education Level / የትምህርት ደረጃ *</label>
+                    <select id="educationLevel" required>
+                        <option value="">-- Select Education Level / የትምህርት ደረጃ ይምረጡ --</option>
+                        <option value="Grade 10 Complete">Grade 10 Complete / 10ኛ ክፍል ያጠናቀቀ</option>
+                        <option value="Grade 12 Complete">Grade 12 Complete / 12ኛ ክፍል ያጠናቀቀ</option>
+                        <option value="TVET / Certificate">TVET / Certificate / በሙያ ማረጋገጫ (ሰርተፍኬት)</option>
+                        <option value="Diploma">Diploma / ዲፕሎማ</option>
+                        <option value="Bachelor's Degree">Bachelor's Degree / የመጀመሪያ ዲግሪ</option>
+                        <option value="Master's Degree & Above">Master's Degree & Above / ማስተርስ ዲግሪ እና ከዚያ በላይ</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Address / አድራሻ</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" value="Ethiopia" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="region">Select Region *</label>
+                            <select id="region" onchange="populateZones()" required>
+                                <option value="">-- Choose Region --</option>
+                                <option value="Addis Ababa">Addis Ababa / አዲስ አበባ</option>
+                                <option value="Oromia">Oromia / ኦሮሚያ</option>
+                                <option value="Amhara">Amhara / አማራ</option>
+                                <option value="Sidama">Sidama / ሲዳማ</option>
+                                <option value="South Ethiopia">South Ethiopia / የደቡብ ኢትዮጵያ</option>
+                                <option value="Central Ethiopia">Central Ethiopia / የማዕከላዊ ኢትዮጵያ</option>
+                                <option value="South West Ethiopia">South West Ethiopia / የደቡብ ምዕራብ ኢትዮጵያ</option>
+                                <option value="Tigray">Tigray / ትግራይ</option>
+                                <option value="Somali">Somali / ሱማሌ</option>
+                                <option value="Afar">Afar / አፋር</option>
+                                <option value="Benishangul-Gumuz">Benishangul-Gumuz / ቤንሻንጉል ጉሙዝ</option>
+                                <option value="Gambela">Gambela / ጋምቤላ</option>
+                                <option value="Harari">Harari / ሐረሪ</option>
+                                <option value="Dire Dawa">Dire Dawa / ድሬዳዋ</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="zone">Select Zone / ዞን ይምረጡ *</label>
+                            <select id="zone" onchange="handleZoneChange()" required>
+                                <option value="">-- Select Region First --</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="woredaContainer">Woreda / Sub-city (ወረዳ / ክፍለ ከተማ) *</label>
+                            <div id="woredaContainer">
+                                <input type="text" id="woreda" placeholder="Enter Woreda / ወረዳ ያስገቡ" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="kebele">Kebele *</label>
+                            <input type="text" id="kebele" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" value="+251" placeholder="+251XXXXXXXXX" pattern="^\+251[79]\d{8}$" title="Please use the format +251 followed by 9 or 7 and 8 more digits" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Training Category / የትምህርት ዘርፍ ይምረጡ *</label>
+                    <div class="category-grid">
+                        <label>
+                            <input type="radio" name="category" value="Public 1" data-price="21600" data-minage="22" class="hidden-radio" onclick="onCategoryChange()" required>
+                            <div class="selector-card">
+                                <h4>Public 1 / ህዝብ 1</h4>
+                                <span>Age 22+ Required</span>
+                                <div class="price-tag">21,600 ETB</div>
+                            </div>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="category" value="Dry Freight 1" data-price="21600" data-minage="22" class="hidden-radio" onclick="onCategoryChange()">
+                            <div class="selector-card">
+                                <h4>Dry Freight 1 / ደረቅ ጭነት 1</h4>
+                                <span>Age 22+ Required</span>
+                                <div class="price-tag">21,600 ETB</div>
+                            </div>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="category" value="Bajaj" data-price="11600" data-minage="20" class="hidden-radio" onclick="onCategoryChange()">
+                            <div class="selector-card">
+                                <h4>Bajaj / ባጃጅ</h4>
+                                <span>Age 20+ Required</span>
+                                <div class="price-tag">11,600 ETB</div>
+                            </div>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="category" value="Motorcycle" data-price="8600" data-minage="18" class="hidden-radio" onclick="onCategoryChange()">
+                            <div class="selector-card">
+                                <h4>Motorcycle / ሞተር ሳይክል</h4>
+                                <span>Age 18+ Required</span>
+                                <div class="price-tag">8,600 ETB</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Registration Payment System / የክፍያ አማራጭ *</label>
+                    <div class="payment-grid">
+                        <label>
+                            <input type="radio" name="payment" value="Telebirr" class="hidden-radio" onclick="updatePaymentDetails()" required>
+                            <div class="selector-card payment-option">Telebirr</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="CBE Birr" class="hidden-radio" onclick="updatePaymentDetails()">
+                            <div class="selector-card payment-option">CBE Birr</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="Chapa" class="hidden-radio" onclick="updatePaymentDetails()">
+                            <div class="selector-card payment-option">Chapa</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="E-Birr" class="hidden-radio" onclick="updatePaymentDetails()">
+                            <div class="selector-card payment-option">E-Birr</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="Awash Birr" class="hidden-radio" onclick="updatePaymentDetails()">
+                            <div class="selector-card payment-option">Awash Birr</div>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="instructionBox" class="payment-instruction">
+                    <h4>Payment Instructions / የክፍያ መመሪያ</h4>
+                    <p>Please transfer exactly <span id="calcPrice" style="font-weight: bold;">0</span> ETB via <span id="calcSystem" style="font-weight: bold;">System</span> to our official billing number:</p>
+                    <div class="highlight-box">0961843881</div>
+                    <p style="font-size: 0.9rem; margin-top:0.5rem; color:#4B5563;">⚠️ Pay first, then paste the TT transaction history confirmation reference token string down below.</p>
+                    
+                    <div class="form-group" style="margin-top: 1rem;">
+                        <label for="transactionId" style="color: #92400E;">Enter Transaction TT Number / የክፍያ ማረጋገጫ ቁጥር (TT) *</label>
+                        <input type="text" id="transactionId" placeholder="e.g., FT26xxxxxxxx" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Complete & Automatically Verify Registration</button>
+           
+           
+           <!-- Modern Footer -->
+<footer id="contact" class="site-footer">
+  <div class="footer-container">
+    <!-- Brand & About Column -->
+    <div class="footer-col brand-col">
+      <div class="footer-logo">
+        <img src="/imag/GA+LOGO+TRANSPARENT-WIDE-02.webp" alt="Gaaddisa Driving School Logo">
+        <h3 data-i18n="siteTitle">Gaaddisa Driving School</h3>
+      </div>
+      <p class="footer-desc" data-i18n="footerDesc">
+        Empowering safe, confident, and responsible drivers across Ethiopia through modern practical and theoretical instruction.
+      </p>
+     
+    </div>
+
+    <!-- Quick Links Column -->
+    <div class="footer-col">
+      <h4 data-i18n="footerQuickLinks">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#home" data-i18n="navHome">Home</a></li>
+        <li><a href="#about" data-i18n="navAbout">About Us</a></li>
+        <li><a href="#courses" data-i18n="navCourses">Courses</a></li>
+        <li><a href="#booking" data-i18n="navBookings">Registration</a></li>
+      </ul>
+    </div>
+
+    <!-- Training Categories Column -->
+    <div class="footer-col">
+      <h4 data-i18n="footerPrograms">License Categories</h4>
+      <ul class="footer-links">
+        <li><a href="#booking">Public 1 / ህዝብ 1</a></li>
+        <li><a href="#booking">Dry Freight 1 / ደረቅ ጭነት 1</a></li>
+        <li><a href="#booking">Bajaj / ባጃጅ</a></li>
+        <li><a href="#booking">Motorcycle / ሞተር ሳይክል</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact & Working Hours Column -->
+    <div class="footer-col">
+      <h4 data-i18n="navContact">Contact Us</h4>
+      <ul class="footer-contact">
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <span data-i18n="footerAddress">Oromia / Addis Ababa, Ethiopia</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <a href="tel:+251976799331">0976 799 331</a><br>
+            <a href="tel:+251961843881">0961 843 881</a> <small>(Billing)</small>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-clock"></i>
+          <span data-i18n="footerHours">Mon – Sat: 8:00 AM – 5:30 PM</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; <span id="currentYear">2026</span> <span data-i18n="siteTitle">Gaaddisa Driving School</span>. <span data-i18n="footerRights">All rights reserved.</span></p>
+    <div class="payment-badges">
+      <span>Accepted:</span>
+      <span class="badge">Telebirr</span>
+      <span class="badge">CBE Birr</span>
+      <span class="badge">Chapa</span>
+      <span class="badge">Awash Birr</span>
+    </div>
+  </div>
+</footer>
+
+           
+            </form>
+        </section>
+ 

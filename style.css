@@ -1,0 +1,1330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Noto Sans Ethiopic', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body ,html{
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    width: 100%;
+}
+
+
+section,
+footer {
+    scroll-margin-top: 85px;
+}
+
+/* Top Bar / Header */
+header {
+    background-color: #0d253f;
+    color: #ffffff;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    gap: 10px;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f9a826;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #16385c;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: 1px solid #f9a826;
+}
+
+.lang-switcher i {
+    color: #f9a826;
+}
+
+.lang-switcher select {
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+.lang-switcher select option {
+    background-color: #0d253f;
+    color: #fff;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-icon p {
+    margin: 0;
+    color: #ddd;
+}
+
+.social-icon a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon a:hover {
+    color: #f9a826;
+}
+
+/* Navigation & Logo Section */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0d253f;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f9a826;
+}
+
+.call-btn {
+    background-color: #f9a826;
+    color: #0d253f;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s;
+}
+
+.call-btn:hover {
+    background-color: #e09216;
+}
+
+/* Hero Banner */
+.gaddis-banner {
+    background: linear-gradient(rgba(13, 37, 63, 0.85), rgba(13, 37, 63, 0.85)),
+                url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.gaddis-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.gaddis-banner span {
+    color: #f9a826;
+}
+
+.gaddis-banner p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.btn-primary {
+    background-color: #f9a826;
+    color: #0d253f;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-block;
+    transition: transform 0.2s, background-color 0.3s;
+}
+#home{
+    background-image: url("/imag/GA-HERO-IMAGE.webp");
+    width: 100%;
+    height: 100%;
+}
+.btn-primary:hover {
+    transform: scale(1.05);
+    background-color: #e09216;
+}
+
+/* Section Common Styling */
+section.container {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #0d253f;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #f9a826;
+    display: block;
+    margin: 10px auto 0;
+}
+
+/* About Us Section */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.about-grid h3 {
+    color: #0d253f;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.vmv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.vmv-card {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 8px;
+    border-left: 4px solid #f9a826;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.vmv-card h4 {
+    color: #0d253f;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vmv-card h4 i {
+    color: #f9a826;
+}
+
+.vmv-card p {
+    color: #555;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.feature-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+    color: #0d253f;
+}
+
+.feature-box i {
+    color: #f9a826;
+    margin-right: 8px;
+}
+
+/* Courses Section */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 5px solid #0d253f;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    border-top-color: #f9a826;
+}
+
+.course-card h3 {
+    color: #0d253f;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.course-card h3 i {
+    color: #f9a826;
+    margin-right: 8px;
+}
+
+.course-card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-outline {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid #0d253f;
+    color: #0d253f;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background: #0d253f;
+    color: #fff;
+}
+
+/* Trainee Registration Section */
+.booking-section {
+    background-color: #0d253f;
+    color: #fff;
+    padding: 60px 5%;
+}
+
+.booking-section .section-title {
+    color: #fff;
+}
+
+.booking-form.registration-form {
+    max-width: 880px;
+    margin: auto;
+    background: #fff;
+    color: #333;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.req {
+    color: #d93025;
+    font-weight: 700;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.form-row-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #0d253f;
+    font-size: 0.94rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.98rem;
+    background-color: #fff;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #d97706;
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.18);
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-top: 10px;
+}
+
+.radio-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+    width: auto;
+    accent-color: #0d253f;
+    cursor: pointer;
+}
+
+/* Fieldset Boxes (Ethiopian DOB & Address) */
+.bordered-fieldset {
+    border: 1px solid #dce3ea;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 20px;
+    background-color: #f8fafc;
+}
+
+.bordered-fieldset legend {
+    font-weight: 600;
+    color: #0d253f;
+    padding: 0 10px;
+    font-size: 0.96rem;
+}
+
+.bordered-fieldset .form-row-3 .form-group {
+    margin-bottom: 0;
+}
+
+.bordered-fieldset input[readonly] {
+    background-color: #eef2f6;
+    color: #333;
+    cursor: not-allowed;
+}
+
+/* Training Category Cards */
+.category-section {
+    margin: 12px 0 24px;
+}
+
+.category-section .box-heading,
+.payment-section .box-heading {
+    display: block;
+    font-weight: 600;
+    color: #0d253f;
+    margin-bottom: 12px;
+    font-size: 0.96rem;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    gap: 14px;
+}
+
+.category-card,
+.payment-card {
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.category-card input[type="radio"],
+.payment-card input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.category-content {
+    height: 100%;
+    border: 2px solid #dce3ea;
+    border-radius: 10px;
+    padding: 18px 12px;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.25s ease;
+}
+
+.category-card:hover .category-content,
+.payment-card:hover .payment-content {
+    border-color: #d97706;
+    transform: translateY(-2px);
+}
+
+.category-card input[type="radio"]:checked + .category-content {
+    border-color: #0d253f;
+    background-color: #fffbf2;
+    box-shadow: 0 4px 12px rgba(13, 37, 63, 0.14);
+}
+
+.category-content h4 {
+    color: #0d253f;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.category-content .age-req {
+    font-size: 0.82rem;
+    color: #666;
+}
+
+.category-content .price-tag {
+    color: #1a4b8c;
+    font-size: 0.98rem;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+/* Registration Payment System Cards */
+.payment-section {
+    margin: 10px 0 24px;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+    gap: 12px;
+}
+
+.payment-content {
+    border: 2px solid #dce3ea;
+    border-radius: 8px;
+    padding: 16px 10px;
+    text-align: center;
+    background-color: #ffffff;
+    font-weight: 600;}
+    /* =========================================
+   1. Global Reset & Theme Variables
+   ========================================= */
+:root {
+    --primary: #0d253f;
+    --primary-light: #16385c;
+    --secondary: #f9a826;
+    --secondary-hover: #e09216;
+    --dark: #1f2937;
+    --muted: #64748b;
+    --light-bg: #f4f7f6;
+    --card-bg: #f8fafc;
+    --white: #ffffff;
+    --border: #cbd5e1;
+    --success: #10b981;
+    --danger: #d93025;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Noto Sans Ethiopic', 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+section,
+footer {
+    scroll-margin-top: 85px;
+}
+
+/* =========================================
+   2. Top Bar & Navigation
+   ========================================= */
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    gap: 10px;
+}
+
+header h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--primary-light);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+}
+
+.lang-switcher i {
+    color: var(--secondary);
+}
+
+.lang-switcher select {
+    background: transparent;
+    color: var(--white);
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+.lang-switcher select option {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-icon p {
+    margin: 0;
+    color: #cbd5e1;
+}
+
+.social-icon a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon a:hover {
+    color: var(--secondary);
+}
+
+.navbar {
+    background-color: var(--white);
+    padding: 14px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+.call-btn {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.call-btn:hover {
+    background-color: var(--secondary-hover);
+}
+
+/* =========================================
+   3. Hero Banner & Info Sections
+   ========================================= */
+.gaddis-banner {
+    background: linear-gradient(rgba(13, 37, 63, 0.84), rgba(13, 37, 63, 0.88)),
+                url('/imag/hero-driver.jpg') center/cover no-repeat;
+    color: var(--white);
+    text-align: center;
+    padding: 95px 20px;
+}
+
+.gaddis-banner h2 {
+    font-size: 2.4rem;
+    margin-bottom: 14px;
+}
+
+.gaddis-banner span {
+    color: var(--secondary);
+}
+
+.gaddis-banner p {
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: 0 auto 28px;
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-block;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background-color: var(--secondary-hover);
+}
+
+section.container {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 38px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: var(--secondary);
+    display: block;
+    margin: 10px auto 0;
+}
+
+.vmv-grid,
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.vmv-card,
+.course-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.vmv-card {
+    border-left: 4px solid var(--secondary);
+}
+
+.course-card {
+    border-top: 5px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, border-color 0.3s;
+}
+.submit-btn {
+    background-color: green;    
+}
+.course-card:hover {
+    transform: translateY(-5px);
+    border-top-color: var(--secondary);
+}
+
+.vmv-card h4,
+.course-card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.vmv-card i,
+.course-card i {
+    color: var(--secondary);
+    margin-right: 6px;
+}
+
+.btn-outline {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* =========================================
+   4. Registration Form Section (.form-section)
+   ========================================= */
+.form-section,
+.booking-section {
+    background-color: var(--primary);
+    padding: 60px 5%;
+}
+
+.form-section h2,
+.booking-section .section-title {
+    color: var(--white);
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+}
+
+#registrationForm,
+#traineeForm {
+    max-width: 920px;
+    margin: 0 auto;
+    background: var(--white);
+    color: var(--dark);
+    padding: 36px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--primary);
+    font-size: 0.94rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.96rem;
+    background-color: var(--white);
+    color: var(--dark);
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(249, 168, 38, 0.22);
+}
+
+input[readonly] {
+    background-color: #e2e8f0;
+    color: #475569;
+    cursor: not-allowed;
+}
+
+/* Gender Radio Options */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-top: 8px;
+}
+
+.radio-label,
+.radio-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"],
+.radio-option input[type="radio"] {
+    width: 17px;
+    height: 17px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+/* Fieldsets (Birth Date & Address) */
+fieldset {
+    border: 1px solid #dce3ea;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 22px;
+    background-color: var(--card-bg);
+}
+
+legend {
+    font-weight: 700;
+    color: var(--primary);
+    padding: 0 10px;
+    font-size: 0.96rem;
+}
+
+fieldset .form-group:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   5. Training Category & Payment Cards
+   ========================================= */
+.category-grid,
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-top: 8px;
+}
+
+.payment-grid {
+    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+}
+
+.checkbox-card-label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.hidden-radio {
+    display: none;
+}
+
+.card-checkbox {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.selector-card {
+    border: 2px solid #dce3ea;
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 16px 14px;
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+    transition: all 0.25s ease;
+}
+
+.selector-card:hover {
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+.selector-card h4 {
+    font-size: 1rem;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+
+.selector-card span {
+    font-size: 0.84rem;
+    color: var(--muted);
+    display: block;
+}
+
+.price-tag {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #b45309;
+}
+
+.payment-option {
+    font-weight: 700;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 56px;
+}
+
+/* Checked States (Works for both Radio & Checkbox) */
+.hidden-radio:checked + .selector-card,
+.card-checkbox:checked + .selector-card {
+    border-color: var(--primary);
+    background-color: #fff8eb;
+    box-shadow: 0 4px 12px rgba(13, 37, 63, 0.14);
+}
+
+.hidden-radio:checked + .selector-card h4,
+.card-checkbox:checked + .selector-card h4 {
+    color: var(--primary);
+}
+
+/* Error & Validation Messages */
+.error-message {
+    color: var(--danger);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 8px;
+    display: none;
+}
+
+/* Modern Footer Styles */
+.site-footer {
+        background-color:rgb(56, 56, 56);
+  color: white;
+  font-family: 'Poppins', 'Noto Sans Ethiopic', sans-serif;
+  padding-top: 4rem;
+  margin-top: 4rem;
+  border-top: 4px solid #f59e0b; /* Accent highlight */
+}
+.footer-logo img{
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #10b981;
+    border-radius: 50%;
+
+}
+
+.footer-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+  gap: 2.5rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-logo h3 {
+  color:white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: right 10px ;
+}
+
+.footer-desc {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color:white;
+  margin-bottom: 1.5rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.75rem;
+}
+.footer-col h4{
+    margin-left: 40px;
+}
+.footer-links li{
+    margin-left: 40px;
+}
+
+.footer-socials a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background: #f59e0b;
+  transform: translateY(-3px);
+}
+
+.footer-col h4 {
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 32px;
+  height: 2px;
+  background: #f59e0b;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.7rem;
+}
+
+.footer-links a {
+  color:#e90ac4;
+  font-size: 30px;
+  
+  text-decoration: none;
+  font-size: 0.93rem;
+  transition: color 0.25s ease, padding-left 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: #f59e0b;
+  background-color: blue;
+  padding-left: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  
+}
+.footer-socials i{
+    color:#d93025;
+    
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+
+.footer-contact i {
+  color: #f59e0b;
+  margin-top: 4px;
+  font-size: 1rem;
+}
+
+.footer-contact a {
+  color: white;
+  background-color:black;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-contact a:hover {
+  color: #f59e0b;
+   font-size: 10px;
+}
+
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.payment-badges {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.payment-badges .badge {
+  background: rgba(255, 255, 255, 0.08);
+  color:white;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Suuraawwan (images) iskiriinii bilbilaa akka hin dabarre */
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 4. Qabiyyeen hundinuu gidduu (center) akka ta'u */
+.container, .header-inner, .navbar, .form-section {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-inner,
+  .navbar,
+  .form-row,
+  .category-grid,
+  .payment-grid,
+  .about-grid,
+  .course-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .form-group,
+  input,
+  select,
+  fieldset {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
